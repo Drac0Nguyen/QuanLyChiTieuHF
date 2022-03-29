@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:weightSum="10"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnThongKe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C9C9C">
+
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btnThongKeDanhMuc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/custom_btn"
+            android:onClick="AddFragment"
+            android:text="Thống Kê Danh Mục"
+            android:textSize="24sp" />
+
+        <Button
+            android:onClick="AddFragment"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="5"
+            android:id="@+id/btnThongKeThuChi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn"
+            android:text="Thống Kê Thu Chi"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_weight="8.5"
+        android:id="@+id/frameThongKe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

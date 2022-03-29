@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C9C9C"
+    android:orientation="vertical"
+    tools:context="com.example.doanandroid.Controller.MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C1F4A0">
+
+        <Button
+            android:id="@+id/btnChiTieu"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/custom_btn"
+            android:drawableLeft="@drawable/moneyoff"
+            android:text="Chi Tiêu"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnThuNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/custom_btn"
+            android:drawableLeft="@drawable/addmoney"
+            android:text="Thu Nhập"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lvItem"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginBottom="15dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/lnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/custom_btn"
+
+        android:orientation="horizontal"
+
+
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_add"></ImageView>
+
+        <TextView
+            android:layout_width="319dp"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+
+            android:text=" Thêm phân loại mới"
+
+
+            android:textColor="@color/white"
+            android:textSize="26dp"
+            ></TextView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginBottom="5dp"
+    android:background="#9C9C9C"
+    android:descendantFocusability="blocksDescendants"
+    android:foreground="@drawable/selector"
+    android:orientation="horizontal"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/imgChooseTopic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_add"></ImageView>
+
+    <TextView
+        android:id="@+id/txtChooseTopic"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="7dp"
+        android:text="Ăn sáng"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        ></TextView>
+
+
+</LinearLayout>

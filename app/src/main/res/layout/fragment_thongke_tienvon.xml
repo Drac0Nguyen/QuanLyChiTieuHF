@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:background="#9C9C9C"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:background="#3C3535"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/tkk"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:id="@+id/lin1"
+
+            android:background="#B1374F"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Chọn Tháng Năm:"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/txtNgayThongKeTienVon"
+                android:layout_width="224dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Tháng Này"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"></TextView>
+
+            <ImageButton
+                android:id="@+id/imgChonNgayThongKeTienVon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_edit"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageButton>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnThongKeTienVon"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin1"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_btn"
+            android:text="Thống Kê"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lin2"
+
+            android:layout_below="@id/btnThongKeTienVon"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#648F28"
+                    android:text="Tháng-Năm"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#648F28"
+                    android:text="Thu nhập"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#648F28"
+                    android:text="Chi tiêu"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#648F28"
+                    android:text="Số dư"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvThongKeTienVon"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="200dp"
+            android:layout_below="@+id/lin2"
+            android:layout_marginTop="31dp" />
+    </RelativeLayout>
+
+</LinearLayout>

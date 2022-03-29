@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C9C9C"
+    android:orientation="vertical"
+    tools:context="com.example.doanandroid.Controller.LichSuThuChiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#B1374F">
+
+        <TextView
+            android:id="@+id/txtNgay"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="7dp"
+            android:clickable="true"
+            android:foreground="@drawable/selected"
+            android:onClick="perform_action"
+            android:text="27/03/2020"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            tools:ignore="TouchTargetSizeCheck"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#648F28"
+                android:text="Thu nhập"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/txtThuNhap"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="99999999999"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#648F28"
+                android:text="Chi tiêu"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/txtChiTieu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="99999999999"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#648F28"
+                android:text="Số dư"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/txtSoDu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:text="99999999999"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvLichSu"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"></ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/imgBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/custom_btn"
+        android:src="@drawable/ic_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C9C9C"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        >
+        <TextView
+            android:id="@+id/txtThang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:text="Tháng 3"
+            android:padding="15dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/txtThuNhapThang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:text="120000"
+            android:padding="15dp"
+            ></TextView><TextView
+        android:id="@+id/txtChiTieuThang"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:text="50000"
+        android:padding="15dp"
+        ></TextView><TextView
+        android:id="@+id/txtSoDuThang"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/purple_700"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:text="70000"
+        android:padding="15dp"
+        ></TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

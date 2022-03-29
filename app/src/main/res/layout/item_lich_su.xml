@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginBottom="5dp"
+
+    android:descendantFocusability="blocksDescendants"
+    android:foreground="@drawable/selected"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgIconChuDe"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"></ImageView>
+
+    <TextView
+        android:id="@+id/txtChuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="An sang"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="20sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/txtSoTien"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:text="95"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="20dp"></TextView>
+</LinearLayout>

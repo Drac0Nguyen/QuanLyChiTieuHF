@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    android:orientation="vertical"
+    android:weightSum="11"
+    android:background="#9C9C9C"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+
+        android:background="#B1374F"
+        android:orientation="horizontal"
+        android:layout_weight="0.75"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Chọn Tháng Năm:"
+            android:textColor="@color/white"
+            android:textSize="15sp"></TextView>
+
+        <TextView
+            android:id="@+id/txtNgay"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="Tháng Này"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"></TextView>
+
+        <ImageButton
+            android:id="@+id/imgChonNgay"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_edit"
+            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <Button
+        android:id="@+id/btnThongKeThuNhap"
+        android:layout_weight="5"
+        android:text="Thu Nhập"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:background="@drawable/custom_btn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btnThongKeChiTieu"
+            android:layout_weight="5"
+            android:text="Chi Tiêu"
+            android:background="@drawable/custom_btn"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_weight="4.5"
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+            />
+
+
+    <ListView
+        android:id="@+id/lvThongKePhanLoai"
+        android:layout_weight="4."
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+
+
+
+</LinearLayout>
